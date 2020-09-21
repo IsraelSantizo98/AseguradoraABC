@@ -70,16 +70,6 @@ VALUES ('Toyota Corrolla', 2020, 1),
 ('Maserati GranTurismo', 2019, 3);
 SELECT * FROM coche;
 /*9. Borrar el Mazda de “Martín Gómez”.*/
-/*
-SELECT 
-FROM conductor AS con
-INNER JOIN coche AS co ON con.numero_carne = co.numero_carne
-WHERE */
-INSERT INTO dbo.coche (modelo, anio, numero_carne)
-VALUES ('Mazda', 2020, 3),
-('Mazda', 2018, 2);
-DELETE FROM coche WHERE numero_carne = 3 (SELECT modelo FROM coche WHERE modelo = 'Mazda');
-
 DELETE coche
 FROM coche AS co join conductor AS con
 ON co.numero_carne = con.numero_carne
